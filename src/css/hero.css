@@ -1,6 +1,7 @@
 .hero {
-  border-radius: 40px;
   padding: 0 40px;
+  max-width: 1920px;
+  box-sizing: border-box;
 }
 
 .hero .container {
