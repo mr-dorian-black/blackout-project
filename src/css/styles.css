@@ -1,25 +1,77 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./advantages.css');
+
+@font-face {
+  font-family: 'Fixel';
+  src: url(../fonts/FixelText-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel';
+  src: url(../fonts/FixelText-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'Fixel';
+  src: url() format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Fixel';
+  src: url(../fonts/FixelText-SemiBold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel';
+  src: url(../fonts/FixelText-ExtraBold.woff2) format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --main-white: #fff;
+  --main-black: #000;
+  --accent: #ffb803;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+body {
+  font-family: 'Fixel', 'Rubik', sans-serif;
+  background-color: var(--main-white);
+  color: var(--main-black);
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.container {
+  margin: 0 auto;
+}
+
+section {
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgb(255, 255, 255, 0.9),
+      rgb(255, 255, 255, 0.9)
+    ),
+    url(../img/bcg.png);
+  background-size: contain;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    max-width: 1920px;
+  }
 }
