@@ -61,11 +61,11 @@
   transition: all var(--transition);
 }
 
-.hero .container:is(:hover, :focus) .hero-title {
+/* .hero .container:is(:hover, :focus) .hero-title {
   transform: rotate(90deg) scale(1.05);
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
   z-index: 2;
-}
+} */
 
 .hero-img {
   position: absolute;
