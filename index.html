@@ -10,8 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/blackout-project/assets/index-e9bd6616.js"></script>
-    <link rel="stylesheet" href="/blackout-project/assets/index-1d3830f7.css">
+    <script type="module" crossorigin src="/blackout-project/assets/index-de691cf1.js"></script>
+    <link rel="stylesheet" href="/blackout-project/assets/index-f231eea6.css">
   </head>
   <body>
     <header class="header">
@@ -151,21 +151,24 @@
     <form action="submit" class="contacts-form">
       <fieldset class="contacts-form-block">
         <legend class="contacts-form-label">Напишіть нам</legend>
-        <label class="contacts-input-label" for="name">Ім'я</label>
-        <input class="contacts-input" id="name" type="text" required />
-        <label class="contacts-input-label" for="email">e-mail</label>
-        <input class="contacts-input" id="email" type="text" required />
-        <label class="contacts-input-label" for="message"
-          >ваше повідомлення</label
-        >
-        <textarea
-          class="contacts-input"
-          name="message"
-          id="message"
-          cols="1"
-          rows="3"
-          required
-        ></textarea>
+        <div class="input-container">
+          <input type="text" required />
+          <label>Ім'я</label>
+        </div>
+        <div class="input-container">
+          <input type="mail" required />
+          <label>E-mail</label>
+        </div>
+        <div class="input-container">
+          <textarea
+            name="message"
+            id="message"
+            cols="1"
+            rows="1"
+            required
+          ></textarea>
+          <label for="message">ваше повідомлення</label>
+        </div>
       </fieldset>
       <button type="submit" class="form-btn">Submit</button>
     </form>
