@@ -5,9 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/blackout-project/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blackout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     
-    <script type="module" crossorigin src="/blackout-project/assets/index-65e6ffed.js"></script>
-    <link rel="stylesheet" href="/blackout-project/assets/index-c7f27106.css">
+    <script type="module" crossorigin src="/blackout-project/assets/index-e9bd6616.js"></script>
+    <link rel="stylesheet" href="/blackout-project/assets/index-1d3830f7.css">
   </head>
   <body>
     <header class="header">
@@ -32,16 +36,16 @@
         <a href="#advantages" class="hero-nav-link">переваги</a>
       </li>
       <li class="hero-nav-item">
-        <a href="#" class="hero-nav-link">ключові функції</a>
+        <a href="#advantages" class="hero-nav-link">ключові функції</a>
       </li>
       <li class="hero-nav-item">
-        <a href="#" class="hero-nav-link">про нас</a>
+        <a href="#about-us" class="hero-nav-link">про нас</a>
       </li>
       <li class="hero-nav-item">
-        <a href="#" class="hero-nav-link">застосування</a>
+        <a href="#methods" class="hero-nav-link">застосування</a>
       </li>
       <li class="hero-nav-item">
-        <a href="#" class="hero-nav-link">контакти</a>
+        <a href="#contacts" class="hero-nav-link">контакти</a>
       </li>
     </ul>
     <div class="hero-content">
@@ -80,11 +84,94 @@
   <div class="container">
     <h2 class="sec-title">переваги та ключові функції</h2>
     <ul class="advantages-list"></ul>
-    <ul class="parameters-list"></ul>
+    <ul class="parameters-list" id="parameters-list"></ul>
+  </div>
+</section>
+
+      <section class="about-us" id="about-us">
+  <div class="container">
+    <div class="section-title-content">
+      <!-- <svg class="about-us-svg" width="41" height="41">
+        <use href="../img/sprite.svg#plus"></use>
+      </svg> -->
+      <h1 class="section-title">про нас</h1>
+    </div>
+    <div class="section-content">
+      <div class="section-desc-content">
+        <p class="about-us-desc">
+          <span class="text-bold">БПЛА комплекс «BLACKOUT»</span> титульний
+          продукт компанії <span class="text-bold">«AVIAUA»</span> створений та
+          <span class="text-bold">вироблений в Україні</span>, як гідна
+          відповідь команди компанії на російську агресію.
+        </p>
+        <p class="about-us-desc">
+          Ідея виникла в наслідок бажання засновників
+          <span class="text-bold">«AVIAUA»</span> максимально швидко забезпечити
+          Збройні Сили України простим, безпечним, ефективним та легкодоступним
+          засобом знищення живої сили та техніки противника. Головна мета -
+          знищити якомога більшу кількість ворога та мінімізувати втрати
+          особового складу Збройних Сил України.
+        </p>
+      </div>
+
+      <div class="section-verse">
+        <p class="verse">
+          І вам слава, сині гори, Кригою окуті.<br />І вам, лицарі великі, Богом
+          не забуті.<br />Борітеся — поборете, Вам Бог помагає!<br />За вас
+          правда, за вас слава,<br />І воля святая!
+        </p>
+        <p class="verse-author">Т.Г. Шевченко</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="methods" id="methods">
+  <div class="container">
+    <h2 class="methods-title">Способи застосування</h2>
+    <ul class="methods-list"></ul>
   </div>
 </section>
 
     </main>
+    <footer class="contacts" id="contacts">
+  <div class="container">
+    <address class="contacts-data">
+      <p class="contact-label">контакти</p>
+      <p class="contact-info">
+        Якщо у вас виникли запитання, будь ласка, звʼяжіться з нами
+      </p>
+      <p class="contact-label">наш email</p>
+      <a href="mailto:pizda.rusni@gmail.com" class="contact-info"
+        >pizda.rusni@gmail.com</a
+      >
+      <p class="contact-label">наш телефон</p>
+      <a href="tel:+380939716336" class="contact-info">+380 (93) 971-63-36</a>
+    </address>
+    <form action="submit" class="contacts-form">
+      <fieldset class="contacts-form-block">
+        <legend class="contacts-form-label">Напишіть нам</legend>
+        <label class="contacts-input-label" for="name">Ім'я</label>
+        <input class="contacts-input" id="name" type="text" required />
+        <label class="contacts-input-label" for="email">e-mail</label>
+        <input class="contacts-input" id="email" type="text" required />
+        <label class="contacts-input-label" for="message"
+          >ваше повідомлення</label
+        >
+        <textarea
+          class="contacts-input"
+          name="message"
+          id="message"
+          cols="1"
+          rows="3"
+          required
+        ></textarea>
+      </fieldset>
+      <button type="submit" class="form-btn">Submit</button>
+    </form>
+  </div>
+</footer>
+
     
   </body>
 </html>
