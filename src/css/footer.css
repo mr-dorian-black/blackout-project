@@ -119,9 +119,9 @@ textarea {
 }
 
 .input-container input:focus ~ label,
-.input-container input:valid ~ label,
+.input-container input:is(:valid) ~ label,
 .input-container textarea:focus ~ label,
-.input-container textarea:valid ~ label {
+.input-container textarea:is(:valid) ~ label {
   top: -12px;
   font-size: 12px;
 }
