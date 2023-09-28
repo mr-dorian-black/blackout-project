@@ -7,12 +7,8 @@
   line-height: 125%;
 }
 
-.advantages {
-  padding: 100px 0;
-}
-
 .advantages .container {
-  max-width: 1490px;
+  padding: 100px 215px 0;
 }
 
 .sec-title {
@@ -21,7 +17,7 @@
 
 .advantages-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 60px;
   margin-bottom: 100px;

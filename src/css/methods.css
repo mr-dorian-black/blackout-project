@@ -1,0 +1,53 @@
+.methods {
+  padding: 0 40px 100px;
+}
+
+.methods .container {
+  padding: 0 215px;
+}
+
+.methods-title {
+  margin-bottom: 70px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 125%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.methods-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 105px 60px;
+}
+
+.method-item {
+  display: flex;
+  align-items: flex-start;
+  width: calc((100% - 60px) / 2);
+  gap: 45px;
+}
+
+.method-desc {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.method-number {
+  display: block;
+  color: var(--accent);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 125%;
+  margin-top: -15px;
+  padding-right: 45px;
+}
+
+.method-number-block {
+  border-right: 5px solid var(--accent);
+  height: 100%;
+}

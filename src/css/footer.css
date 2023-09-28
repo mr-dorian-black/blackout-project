@@ -1,0 +1,108 @@
+.contacts {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 40px 20px;
+  background-image: linear-gradient(
+      rgb(255, 255, 255, 0.9),
+      rgb(255, 255, 255, 0.9)
+    ),
+    url(../img/bcg.png);
+  background-size: cover;
+}
+
+.contacts .container {
+  padding: 150px 215px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)),
+    url(../img/bcg.png);
+  background-size: cover;
+  box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.3);
+}
+
+.contacts-data {
+  max-width: 437px;
+}
+
+.contact-label {
+  color: var(--accent);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: block;
+  color: var(--main-white);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 36px;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.contacts-form-block {
+  display: flex;
+  flex-direction: column;
+  width: 523px;
+  border: none;
+}
+
+.contacts-form-label {
+  color: var(--accent);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contacts-input-label {
+  color: var(--main-white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.contacts-input {
+  margin-bottom: 70px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid var(--accent);
+  color: var(--main-white);
+  padding: 5px 10px;
+}
+
+.contacts-input:is(:focus) {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-btn {
+  padding: 10px 40px;
+  border: none;
+  background-color: var(--accent);
+  color: var(--main-white);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 50px;
+}

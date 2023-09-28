@@ -2,6 +2,9 @@
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./advantages.css');
+@import url('./about-us.css');
+@import url('./methods.css');
+@import url('./footer.css');
 
 @font-face {
   font-family: 'Fixel';
@@ -71,7 +74,7 @@ section {
       rgb(255, 255, 255, 0.9)
     ),
     url(../img/bcg.png);
-  background-size: contain;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1200px) {
