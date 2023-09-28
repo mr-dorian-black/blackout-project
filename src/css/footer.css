@@ -68,28 +68,6 @@
   margin-bottom: 20px;
 }
 
-.contacts-input-label {
-  color: var(--main-white);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.contacts-input {
-  margin-bottom: 70px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid var(--accent);
-  color: var(--main-white);
-  padding: 5px 10px;
-}
-
-.contacts-input:is(:focus) {
-  outline: none;
-}
-
 textarea {
   resize: none;
 }
@@ -100,9 +78,50 @@ textarea {
   background-color: var(--accent);
   color: var(--main-white);
   font-family: inherit;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   border-radius: 50px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 60px;
+}
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--main-white);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+.input-container input,
+.input-container textarea {
+  border: 0;
+  border-bottom: 3px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 15px 0 5px 0;
+  font-size: 20px;
+  color: var(--main-white);
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--accent);
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label,
+.input-container textarea:focus ~ label,
+.input-container textarea:valid ~ label {
+  top: -12px;
+  font-size: 12px;
 }
