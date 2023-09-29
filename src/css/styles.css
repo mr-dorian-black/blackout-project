@@ -1,10 +1,12 @@
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./hero.css');
+@import url('./burger-icon.css');
+@import url('./burger-menu.css');
+/* @import url('./hero.css');
 @import url('./advantages.css');
 @import url('./about-us.css');
 @import url('./methods.css');
-@import url('./footer.css');
+@import url('./footer.css'); */
 
 @font-face {
   font-family: 'Fixel';
@@ -65,6 +67,8 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 10px 15px;
+  max-width: 355px;
 }
 
 section {
@@ -77,7 +81,16 @@ section {
   background-size: cover;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1920px) {
   section {
     max-width: 1920px;
   }

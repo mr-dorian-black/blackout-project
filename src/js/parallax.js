@@ -1,5 +1,6 @@
+import _ from 'lodash'
 // Add event listener
-document.addEventListener("mousemove", parallax);
+document.addEventListener("mousemove", _.throttle(parallax, 10));
 const drone = document.querySelector('.hero-img');
 // Magic happens here
 
