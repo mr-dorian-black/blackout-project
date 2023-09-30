@@ -10,14 +10,14 @@ menuList.addEventListener('click', e => {
 
 function toggleMenu() {
      menu.classList.toggle('is-open');
-     openBtn.forEach(btn => btn.classList.toggle('is-open'));
-     logo.classList.toggle('is-open');
      if (menu.classList.contains('is-open')) {
           document.body.style.overflow = 'hidden';
+          document.body.classList.add('menu-open');
           menu.style.overflow = 'hidden';
      }
      else {
           document.body.style.overflow = 'auto';
+          document.body.classList.remove('menu-open');
           menu.style.overflow = 'auto';
      }
 };
@@ -26,6 +26,4 @@ function toggleMenu() {
 window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
      if (!e.matches) return;
      menu.classList.remove('is-open');
-     openBtn.forEach(btn => btn.classList.remove('is-open'));
-     logo.classList.remove('is-open');
 });
