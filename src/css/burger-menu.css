@@ -47,9 +47,6 @@
   padding: 60px 0;
 }
 
-.burger-link-logo {
-}
-
 .burger-svg-logo {
   width: 112px;
   height: 38px;
@@ -83,4 +80,5 @@
 
 body.menu-open {
   position: fixed;
+  overflow: hidden;
 }
