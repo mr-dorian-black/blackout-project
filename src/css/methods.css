@@ -1,53 +1,54 @@
 .methods {
-  padding: 0 40px 100px;
+  padding-top: 0;
 }
-
 .methods .container {
-  padding: 0 215px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .methods-title {
-  margin-bottom: 70px;
-  font-size: 48px;
+  margin-bottom: 14px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 900;
   line-height: 125%;
   text-align: center;
   text-transform: uppercase;
+  max-width: 212px;
 }
 
 .methods-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 105px 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .method-item {
-  display: flex;
-  align-items: flex-start;
-  width: calc((100% - 60px) / 2);
-  gap: 45px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
 }
 
 .method-desc {
-  font-size: 26px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
+  border-left: 5px solid var(--accent);
+  padding-left: 20px;
 }
 
 .method-number {
   display: block;
   color: var(--accent);
-  font-size: 96px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 900;
   line-height: 125%;
-  margin-top: -15px;
-  padding-right: 45px;
-}
-
-.method-number-block {
-  border-right: 5px solid var(--accent);
-  height: 100%;
+  margin-top: -7px;
+  padding-right: 20px;
 }

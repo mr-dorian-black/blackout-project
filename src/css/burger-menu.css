@@ -1,13 +1,23 @@
 .burger-block {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100%;
   background-image: linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)),
-    url(../img/bcg.png);
-  padding: 10px 25px 40px;
+    url(../img/bcg.png),
+    linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, 1));
+  padding: 0px 25px 40px;
   color: var(--main-white);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all var(--transition);
+  z-index: 99;
+}
+
+.burger-block.is-open {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .burger-block .container {
@@ -16,7 +26,15 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  overflow: hidden;
+  padding: 5px 0;
+}
+
+.burger-header {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  width: 100%;
 }
 
 .burger-menu-item {
@@ -43,4 +61,13 @@
   color: var(--accent);
   font-size: 36px;
   font-weight: 900;
+}
+
+.burger-menu-link {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.burger-img {
+  transform: scale(4) translateX(-15%);
 }

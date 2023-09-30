@@ -1,8 +1,8 @@
 .burger-icon-block {
   position: absolute;
   right: 0px;
-  top: 15px;
-  z-index: 10;
+  top: 10px;
+  z-index: 200;
 }
 
 .burger-icon {

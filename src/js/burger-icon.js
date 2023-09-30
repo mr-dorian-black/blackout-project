@@ -6,5 +6,5 @@ let render = `
 </button>
 `
 
-let block = document.querySelector('.burger-icon-block');
-block.innerHTML = render;
+let block = document.querySelectorAll('.burger-icon-block');
+block.forEach(b => b.innerHTML = render);

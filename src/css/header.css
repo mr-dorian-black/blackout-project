@@ -1,3 +1,17 @@
+.header {
+  height: 55px;
+  width: 100%;
+  background-color: var(--main-white);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.header .container {
+  padding: 5px 15px;
+}
+
 .header-text {
   display: none;
 }
@@ -5,6 +19,13 @@
 .header-svg-logo {
   width: 112px;
   height: 38px;
+  transition: all var(--transition);
+  z-index: 10;
+}
+
+.header-svg-logo.is-open {
+  fill: var(--main-white);
+  z-index: 200;
 }
 
 .header-nav {
@@ -14,7 +35,7 @@
   position: relative;
 }
 
-@media screen and (min-width: 1920px) {
+/* @media screen and (min-width: 1920px) {
   .header {
     max-width: 1920px;
     margin: 0 auto;
@@ -36,4 +57,4 @@
   .header-svg-logo:is(:hover, :focus) {
     fill: var(--accent);
   }
-}
+} */

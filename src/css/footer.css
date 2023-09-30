@@ -1,44 +1,43 @@
 .contacts {
-  margin: 0 auto;
-  max-width: 1920px;
-  padding: 0 40px 20px;
   background-image: linear-gradient(
       rgb(255, 255, 255, 0.9),
       rgb(255, 255, 255, 0.9)
     ),
     url(../img/bcg.png);
   background-size: cover;
+  padding: 25px 10px 10px;
 }
 
 .contacts .container {
-  padding: 150px 215px;
   display: flex;
   justify-content: space-between;
-  border-radius: 40px;
+  flex-direction: column;
+  border-radius: 31px;
   background-image: linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)),
     url(../img/bcg.png);
   background-size: cover;
   box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.3);
+  padding: 35px 15px;
 }
 
 .contacts-data {
-  max-width: 437px;
+  max-width: 200px;
 }
 
 .contact-label {
   color: var(--accent);
-  font-size: 32px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .contact-info {
   display: block;
   color: var(--main-white);
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -54,13 +53,14 @@
 .contacts-form-block {
   display: flex;
   flex-direction: column;
-  width: 523px;
+  width: 100%;
   border: none;
+  padding: 0;
 }
 
 .contacts-form-label {
   color: var(--accent);
-  font-size: 32px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -73,12 +73,12 @@ textarea {
 }
 
 .form-btn {
-  padding: 10px 40px;
+  padding: 7px 20px;
   border: none;
   background-color: var(--accent);
   color: var(--main-white);
   font-family: inherit;
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -87,13 +87,13 @@ textarea {
 
 .input-container {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 28px;
 }
 .input-container label {
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 0px;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 500;
   color: var(--main-white);
   pointer-events: none;
@@ -106,8 +106,8 @@ textarea {
   border-bottom: 3px solid #555;
   background: transparent;
   width: 100%;
-  padding: 15px 0 5px 0;
-  font-size: 20px;
+  padding: 5px 0;
+  font-size: 12px;
   color: var(--main-white);
 }
 
