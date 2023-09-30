@@ -6,6 +6,12 @@
   position: fixed;
   top: 0;
   box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.6);
+  transition: all var(--transition);
+}
+
+.header.header-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 .header .container {
