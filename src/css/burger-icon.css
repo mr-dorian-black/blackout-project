@@ -1,55 +1,33 @@
-.burger-icon-block {
+.burger-icon {
   position: absolute;
-  left: 0px;
   top: 10px;
   z-index: 200;
-}
-
-.burger-icon {
   display: flex;
   flex-direction: column;
-  width: 30px;
+  width: 20px;
   cursor: pointer;
   border: none;
   background-color: transparent;
+  padding: 0;
 }
 
-.burger-icon div {
-  background: var(--main-black);
-  border-radius: 10px;
-  height: 3px;
-  margin: 3px 0;
-  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+.burger-open {
+  left: 0px;
 }
 
-.burger-icon.is-open div {
-  background: var(--main-white);
+.burger-close {
+  right: 0;
 }
 
-.burger-icon div:nth-of-type(1) {
-  width: 50%;
+.burger-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
-.burger-icon div:nth-of-type(2) {
-  width: 100%;
+.burger-icon.burger-open svg {
+  stroke: var(--main-black);
 }
 
-.burger-icon div:nth-of-type(3) {
-  width: 75%;
-}
-
-.burger-icon.is-open div:nth-of-type(1) {
-  transform-origin: bottom;
-  transform: rotatez(45deg) translate(4px, 2.5px);
-}
-
-.burger-icon.is-open div:nth-of-type(2) {
-  transform-origin: top;
-  transform: rotatez(-45deg);
-}
-
-.burger-icon.is-open div:nth-of-type(3) {
-  transform-origin: bottom;
-  width: 50%;
-  transform: translate(7.5px, -6.5px) rotatez(45deg);
+.burger-icon.burger-close svg {
+  stroke: var(--main-white);
 }
