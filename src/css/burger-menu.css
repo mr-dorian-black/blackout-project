@@ -7,7 +7,7 @@
   background-image: linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)),
     url(../img/bcg.png),
     linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, 1));
-  padding: 0px 25px 40px;
+  padding: 0px 15px 40px;
   color: var(--main-white);
   transform: translateX(-100%);
   opacity: 0;
