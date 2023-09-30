@@ -1,10 +1,7 @@
 .header {
   height: 55px;
   width: 100%;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)),
-    url(../img/bcg.png),
-    linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, 1));
-  /* background-color: var(--main-white); */
+  background-color: var(--main-white);
   z-index: 10;
   position: fixed;
   top: 0;
@@ -24,7 +21,7 @@
   height: 38px;
   transition: all var(--transition);
   z-index: 10;
-  fill: var(--main-white);
+  fill: var(--main-black);
 }
 
 .header-svg-logo.is-open {
