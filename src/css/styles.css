@@ -70,8 +70,8 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 10px 15px;
-  max-width: 355px;
+  padding: 10px 0px;
+  max-width: 375px;
 }
 
 section {
@@ -84,7 +84,7 @@ section {
   /* background-size: cover; */
   background-repeat: no-repeat;
   overflow: hidden;
-  padding: 15px 10px 10px;
+  padding: 15px 5px 10px;
 }
 
 @media screen and (min-width: 375px) {

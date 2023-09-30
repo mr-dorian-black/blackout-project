@@ -69,5 +69,10 @@
 }
 
 .burger-img {
+  display: none;
   transform: scale(4) translateX(-15%);
+}
+
+.burger-block.is-open .burger-img {
+  display: block;
 }
