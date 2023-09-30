@@ -4,8 +4,8 @@
   left: 0;
   width: 100vw;
   height: 100%;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)),
-    url(../img/bcg.png),
+  background-image: url(../img/drone.png),
+    linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)), url(../img/bcg.png),
     linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, 1));
   padding: 0px 0px 40px;
   color: var(--main-white);
@@ -13,6 +13,8 @@
   opacity: 0;
   transition: all var(--transition);
   z-index: 99;
+  background-position: 75% 130%, 0, 0, 0;
+  background-repeat: no-repeat, repeat, repeat;
 }
 
 .burger-block.is-open {
@@ -21,10 +23,8 @@
 }
 
 .burger-block .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 60px 1fr 80px;
   height: 100%;
   padding: 5px 15px;
 }
@@ -61,6 +61,8 @@
   color: var(--accent);
   font-size: 36px;
   font-weight: 900;
+  align-self: center;
+  justify-self: center;
 }
 
 .burger-menu-link {
@@ -70,7 +72,9 @@
 
 .burger-img {
   display: none;
-  transform: scale(4) translateX(-15%);
+  bottom: 100px;
+  transform: translateX(-15%);
+  position: absolute;
 }
 
 .burger-block.is-open .burger-img {
