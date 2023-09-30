@@ -7,4 +7,4 @@ let render = `
 `
 
 let block = document.querySelectorAll('.burger-icon-block');
-block.forEach(b => b.innerHTML = render);
+// block.forEach(b => b.innerHTML = render);
