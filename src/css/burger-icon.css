@@ -1,6 +1,6 @@
 .burger-icon-block {
   position: absolute;
-  right: 0px;
+  left: 0px;
   top: 10px;
   z-index: 200;
 }
@@ -15,7 +15,7 @@
 }
 
 .burger-icon span {
-  background: var(--main-black);
+  background: var(--main-white);
   border-radius: 10px;
   height: 3px;
   margin: 3px 0;
