@@ -4,7 +4,6 @@
       rgb(255, 255, 255, 0.9)
     ),
     url(../img/bcg.png);
-  background-size: cover;
   padding: 25px 10px 10px;
 }
 
@@ -15,7 +14,6 @@
   border-radius: 31px;
   background-image: linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)),
     url(../img/bcg.png);
-  background-size: cover;
   box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.3);
   padding: 35px 15px;
 }
