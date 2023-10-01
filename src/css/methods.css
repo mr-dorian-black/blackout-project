@@ -52,3 +52,39 @@
   margin-top: -7px;
   padding-right: 20px;
 }
+
+@media screen and (min-width: 1280px) {
+  .methods {
+    padding-top: 40px;
+  }
+
+  .methods .container {
+    padding: 0 60px 20px;
+  }
+
+  .methods-title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    max-width: 100%;
+  }
+
+  .methods-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 90px 60px;
+  }
+
+  .method-item {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .method-number {
+    font-size: 64px;
+    margin-top: -10px;
+  }
+
+  .method-desc {
+    font-size: 20px;
+  }
+}

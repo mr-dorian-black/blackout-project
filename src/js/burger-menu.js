@@ -14,16 +14,16 @@ menuList.addEventListener('click', e => {
 function toggleMenu() {
      menu.classList.toggle('is-open');
      if (menu.classList.contains('is-open')) {
-          htmlTag.style.overflow = 'hidden';
-          bodyTag.style.overflow = 'hidden';
-          // bodyTag.classList.add('menu-open');
+          // htmlTag.style.overflow = 'hidden';
+          // bodyTag.style.overflow = 'hidden';
+          bodyTag.classList.add('menu-open');
           menu.style.overflow = 'hidden';
           // disableScroll();
      }
      else {
-          htmlTag.style.overflow = 'auto';
-          bodyTag.style.overflow = 'auto';
-          // bodyTag.classList.remove('menu-open');
+          // htmlTag.style.overflow = 'auto';
+          // bodyTag.style.overflow = 'auto';
+          bodyTag.classList.remove('menu-open');
           menu.style.overflow = 'auto';
           // enableScroll();
      }

@@ -78,3 +78,31 @@
   line-height: 125%;
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 1280px) {
+  .about-us .container {
+    padding: 40px 60px 80px;
+    gap: 40px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+  }
+
+  .verse {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .about-us-desc {
+    font-size: 20px;
+  }
+  .verse-author {
+    font-size: 14px;
+  }
+}

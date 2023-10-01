@@ -42,19 +42,27 @@
   position: relative;
 }
 
-/* @media screen and (min-width: 1920px) {
-  .header {
-    max-width: 1920px;
-    margin: 0 auto;
+@media screen and (min-width: 1280px) {
+  .header-text {
+    display: block;
+  }
+
+  .header-nav {
+    justify-content: space-around;
   }
 
   .header-text {
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 900;
     line-height: 125%;
     text-transform: uppercase;
+  }
+
+  .header-svg-logo {
+    width: 130px;
+    height: 43px;
   }
 
   .header-svg-logo {
@@ -64,4 +72,7 @@
   .header-svg-logo:is(:hover, :focus) {
     fill: var(--accent);
   }
-} */
+}
+
+@media screen and (min-width: 1920px) {
+}
