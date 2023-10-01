@@ -20,6 +20,7 @@
   display: flex;
   gap: 10px;
   overflow: hidden;
+  padding-left: 10px;
 }
 
 .advantages-svg {
@@ -118,10 +119,12 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     margin-bottom: 40px;
+    padding: 0;
   }
 
   .advantages-item {
     justify-self: center;
+    padding-left: 0;
   }
 
   .parameters-list {
