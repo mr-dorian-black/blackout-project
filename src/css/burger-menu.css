@@ -13,7 +13,7 @@
   opacity: 0;
   transition: all var(--transition);
   z-index: 99;
-  background-position: 75% 130%, 0, 0, 0;
+  background-position: 75% 100%, 0, 0, 0;
   background-repeat: no-repeat, repeat, repeat;
 }
 
