@@ -66,16 +66,16 @@
 
 .parameters-param {
   color: var(--accent);
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 98.5%;
   align-self: center;
 }
 
 .parameters-desc {
   color: var(--main-white);
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
