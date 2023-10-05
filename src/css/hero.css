@@ -11,14 +11,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 42px 15px;
+  padding: 42px 15px 87px;
   position: relative;
   box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.3);
-  border-radius: 31px;
+  border-radius: 14px;
   background-color: var(--main-black);
-  background-image: url(../img/sky.png);
+  background-image: url(../img/hero-mobile-sky.png);
   background-repeat: no-repeat;
-  background-position: 20% 100%;
+  background-size: cover;
   color: var(--main-white);
   height: 752px;
 }
@@ -27,24 +27,21 @@
   padding-top: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
   height: 100%;
   position: relative;
 }
 
 .hero-title {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   text-transform: uppercase;
-  writing-mode: vertical-lr;
-  color: var(--accent);
-  font-size: 76px;
+  color: rgba(255, 184, 3, 0.9);
+  padding-left: 35px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 900;
   line-height: 125%;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.08em;
   display: block;
   transition: all var(--transition);
   z-index: 1;
@@ -60,14 +57,16 @@
   color: var(--main-white);
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: -10px;
+  letter-spacing: 0.04em;
 }
 
 .hero-desc-svg {
+  fill: transparent;
   stroke: var(--accent);
   width: 26px;
   height: 26px;
@@ -79,32 +78,37 @@
 
 .hero-content-descrition {
   z-index: 1;
+  margin-bottom: 20px;
 }
 
 .hero-desc-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .hero-descrition-text {
   color: var(--main-white);
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
-  max-width: 260px;
+  max-width: 300px;
   padding-left: 35px;
+  letter-spacing: 0.06em;
 }
 
 .hero-img {
   position: absolute;
-  bottom: 150px;
-  left: 0;
-  transform: translateX(-30%) scale(2);
+  top: 40px;
+  left: -155px;
+  transform: rotate(-10deg);
   z-index: 0;
-  width: 100%;
+  width: 650px;
+  aspect-ratio: 4/2;
+  max-width: 750px;
+  object-fit: fill;
 }
 
 @media screen and (min-width: 1280px) {
@@ -114,6 +118,8 @@
 
   .hero .container {
     padding: 20px 130px 56px;
+    border-radius: 14px;
+    background-image: url('../img/sky.png');
     height: auto;
   }
 
@@ -125,7 +131,10 @@
 
   .hero-title {
     position: static;
+    writing-mode: vertical-lr;
     font-size: 80px;
+    padding-left: 0;
+    color: var(--accent);
   }
 
   .hero-nav {
@@ -176,5 +185,9 @@
     z-index: 0;
     width: 650px;
     z-index: 0;
+    height: auto;
+    max-width: 100%;
+    top: unset;
+    aspect-ratio: unset;
   }
 }

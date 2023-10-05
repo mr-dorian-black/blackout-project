@@ -48,6 +48,66 @@
   font-display: swap;
 }
 
+/* ---------------- Rubik ------------------- */
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../fonts/Rubik-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../fonts/Rubik-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../fonts/Rubik-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../fonts/Rubik-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../fonts/Rubik-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../fonts/Rubik-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../fonts/Rubik-ExtraBold.ttf);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------------------------------------------------- */
+
 :root {
   --main-white: #fff;
   --main-black: #000;
@@ -62,7 +122,7 @@ html {
 
 body {
   padding-top: 55px;
-  font-family: 'Fixel', 'Rubik', sans-serif;
+  font-family: 'Rubik', 'Fixel', sans-serif;
   background-color: var(--main-white);
   color: var(--main-black);
   overflow-x: hidden;
@@ -70,15 +130,14 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 10px 0px;
   max-width: 400px;
 }
 
 section {
   margin: 0 auto;
   background-image: linear-gradient(
-      rgb(255, 255, 255, 0.9),
-      rgb(255, 255, 255, 0.9)
+      rgb(255, 255, 255, 0.95),
+      rgb(255, 255, 255, 0.95)
     ),
     url(../img/bcg.png);
   /* background-size: cover; */

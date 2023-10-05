@@ -5,7 +5,7 @@
     ),
     url(../img/bcg.png); */
   padding: 25px 10px 10px;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.95)),
+  background-image: linear-gradient(rgb(0, 0, 0, 0.98), rgb(0, 0, 0, 0.98)),
     url(../img/bcg.png);
 }
 
