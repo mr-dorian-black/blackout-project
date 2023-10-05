@@ -139,7 +139,7 @@ section {
       rgb(255, 255, 255, 0.95),
       rgb(255, 255, 255, 0.95)
     ),
-    url(../img/bcg.png);
+    url(../img/bcg.webp);
   /* background-size: cover; */
   background-repeat: repeat;
   overflow: hidden;
