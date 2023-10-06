@@ -23,7 +23,7 @@ const renderMethods = (methods) => {
      return methods.map((method, index) => {
           return `
           <li class="method-item">
-               <div class="method-number-block"><span class="method-number">${index + 1}</span></div>
+               <div class="method-number-block"><span class="method-number">${index < 10 ? `0${index + 1}` : index + 1}</span></div>
                <p class="method-desc">${method.method}</p>
           </li>`
      }).join('')
