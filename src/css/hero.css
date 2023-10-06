@@ -114,7 +114,6 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    padding: 40px 20px;
     background-image: url('../img/sky.webp');
     max-width: 1920px;
   }
