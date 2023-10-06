@@ -86,10 +86,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .advantages .container {
-    padding: 10px 30px;
-  }
-
   .parameters-item:is(:hover, :focus) {
     background-color: var(--accent);
     transform: scale(1.1);
@@ -108,15 +104,15 @@
   .sec-title {
     font-size: 36px;
     margin-bottom: 40px;
-    padding-left: 30px;
+    padding-left: 60px;
   }
 
   .advantages-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .advantages-desc {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .advantages-svg {
@@ -128,7 +124,6 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     margin-bottom: 40px;
-    padding: 0;
   }
 
   .advantages-item {
@@ -137,7 +132,7 @@
   }
 
   .parameters-list {
-    padding: 20px 0;
+    padding: 20px 30px;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     transition: all var(--transition);
@@ -150,11 +145,11 @@
   }
 
   .parameters-param {
-    font-size: 28px;
+    font-size: 24px;
     align-self: center;
   }
 
   .parameters-desc {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
