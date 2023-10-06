@@ -1,5 +1,4 @@
 .hero {
-  padding: 15px 5px 20px;
   box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.3);
   border-radius: 14px;
   background-color: var(--main-black);
