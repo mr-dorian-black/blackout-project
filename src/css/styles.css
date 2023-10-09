@@ -6,6 +6,7 @@
 @import url('./advantages.css');
 @import url('./about-us.css');
 @import url('./methods.css');
+@import url('./payments.css');
 @import url('./footer.css');
 
 @font-face {
@@ -121,7 +122,7 @@ html {
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 50px;
   font-family: 'Rubik', 'Fixel', sans-serif;
   background-color: var(--main-white);
   color: var(--main-black);
@@ -143,11 +144,7 @@ body {
 
 section {
   margin: 0 auto;
-  padding: 15px 0 10px;
-}
-
-main {
-  padding: 0 10px;
+  padding: 15px 10px 10px;
 }
 
 @media screen and (min-width: 375px) {
@@ -166,7 +163,7 @@ main {
     padding: 20px;
   }
   body {
-    padding-top: 75px;
+    padding-top: 50px;
   }
 }
 

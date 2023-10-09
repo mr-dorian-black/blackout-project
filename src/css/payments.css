@@ -1,0 +1,106 @@
+.payments-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.notyf {
+  padding: 20px !important;
+}
+
+.notyf .clipboard-notif-success {
+  border-radius: 21px;
+  max-width: 100%;
+  background-color: var(--main-black);
+  box-shadow: 0 0px 7px 0 rgba(255, 184, 3, 0.9);
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1280px) {
+  .payments-section .container {
+    padding: 40px 60px 80px;
+    background-image: linear-gradient(
+        rgba(255, 184, 3, 0.9),
+        rgba(255, 184, 3, 0.9)
+      ),
+      linear-gradient(rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),
+      url(../img/bcg.webp);
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 14px;
+  }
+
+  .payments-title {
+    text-transform: uppercase;
+    color: var(--main-black);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 125%;
+    margin-bottom: 28px;
+  }
+
+  .payments-list {
+    gap: 60px;
+  }
+
+  .payments-item {
+    width: calc((100% - 60px) / 2);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .payments-label {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    color: var(--main-black);
+  }
+
+  .payments-desc-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .payments-desc {
+    align-self: end;
+  }
+
+  .payments-button {
+    align-self: end;
+    padding: 10px 15px;
+    border-radius: 21px;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 8px;
+    transition: all var(--transition);
+  }
+
+  .payments-button:is(:hover, :focus, :active) {
+    color: var(--accent);
+  }
+
+  .icon-copy {
+    fill: var(--main-white);
+  }
+
+  .payments-button:is(:hover, :focus, :active) .icon-copy {
+    fill: var(--accent);
+  }
+
+  .payments-desc {
+    color: var(--main-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+  }
+
+  .notyf .clipboard-notif-success {
+    font-size: 16px;
+  }
+}
