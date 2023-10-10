@@ -75,6 +75,14 @@
   text-transform: uppercase;
 }
 
+.about-us-sky {
+  display: none;
+}
+
+.about-us-drone {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
   .about-us {
     background-image: linear-gradient(
@@ -85,30 +93,47 @@
   }
 
   .about-us .container {
-    padding: 40px 60px 80px;
+    padding: 40px 60px 280px;
     gap: 40px;
-    background-image: linear-gradient(
-        rgba(255, 184, 3, 0.9),
-        rgba(255, 184, 3, 0.9)
-      ),
-      linear-gradient(rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),
-      url(../img/bcg.webp);
+    background-color: var(--accent);
     box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.2);
     border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-us-sky {
+    display: block;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    mix-blend-mode: luminosity;
+  }
+
+  .about-us-drone {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    width: 500px;
   }
 
   .section-title {
     font-size: 36px;
+    z-index: 1;
   }
 
   .section-content {
     display: grid;
     grid-template-columns: 1fr 350px;
+    z-index: 1;
+    color: #594001;
   }
 
   .verse {
     font-size: 24px;
     margin-bottom: 20px;
+    border-left: 3px solid #594001;
   }
 
   .about-us-desc {
