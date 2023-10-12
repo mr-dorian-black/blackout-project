@@ -60,7 +60,7 @@
 .payments-item {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 14px;
   z-index: 1;
 }
 
