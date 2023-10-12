@@ -68,7 +68,7 @@
     background-image: url(../img/training-sky.webp);
     color: var(--main-white);
     grid-template-columns: repeat(2, 1fr);
-    padding: 120px 8%;
+    padding: 100px 80px;
     gap: 15px;
   }
 
