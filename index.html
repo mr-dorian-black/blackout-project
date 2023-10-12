@@ -11,8 +11,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/blackout-project/assets/index-a2da752d.js"></script>
-    <link rel="stylesheet" href="/blackout-project/assets/index-fd68e168.css">
+    <script type="module" crossorigin src="/blackout-project/assets/index-426a74a6.js"></script>
+    <link rel="stylesheet" href="/blackout-project/assets/index-5854ec9b.css">
   </head>
   <body>
     <header class="header">
@@ -135,7 +135,19 @@
 
       <section class="about-us" id="about-us">
   <div class="container">
-    <img class="about-us-sky" src="/blackout-project/assets/sky-about-us-3ab1c0c9.webp" alt="sky" />
+    <picture class="about-us-sky">
+      <!-- <source
+        srcset="./img/sky-about-us.webp"
+        type="image/webp"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./img/about-us-sky-mob.webp"
+        type="image/webp"
+        media="(min-width: 1px)"
+      /> -->
+      <img src="/blackout-project/assets/sky-about-us-3ab1c0c9.webp" alt="sky" />
+    </picture>
     <img class="about-us-drone" src="/blackout-project/assets/about-us-drone-64b7f5ec.webp" alt="drone" />
     <div class="section-title-content">
       <h1 class="section-title">про нас</h1>
@@ -183,22 +195,23 @@
       <use href="/blackout-project/assets/sprite-91aa9efc.svg#icon-training-school"></use>
     </svg>
     <div class="training-content">
-      <p class="training-desc-one">підготовка операторів</p>
+      <p class="training-desc-one">ЛІТАЄМО & НАВЧАЄМО</p>
       <p class="training-desc-two">
         Підготовка операторів для БПЛА комплексу «BLACK-ОUT» проводиться «ПЕРШОЮ
         ЛЕТУНСЬКЮЇ ШКОЛОЮ».
       </p>
       <p class="training-desc-three">
         По завершенню підготовки оператори отримують сертифікати державного
-        зразка «БАЗОВИЙ КУРС УПРАВЛІННЯ БПЛА ЛІТАКОВОГО ТИПУ». Підготовлені
-        оператори, які попередньо делеговані замовником, приймають виготовлений
-        для нього борт.
+        зразка <span>«БАЗОВИЙ КУРС УПРАВЛІННЯ БПЛА ЛІТАКОВОГО ТИПУ»</span>.
+        Підготовлені оператори, які попередньо делеговані замовником, приймають
+        виготовлений для нього борт.
       </p>
     </div>
-    <div class="training-div-relief">
-      <span class="radio-dot-one"></span><span class="radio-dot-two"></span>
-      <img class="training-relief-img" src="/blackout-project/assets/MAP-1e9e74cd.svg" alt="map" />
-    </div>
+    <img
+      src="/blackout-project/assets/training-drone-mob-7a1b2556.png"
+      alt="drone"
+      class="training-drone-mob"
+    />
   </div>
 </section>
 
@@ -236,8 +249,23 @@
 
       <section class="payments-section">
   <div class="container">
+    <picture class="payments-sky-desk">
+      <source
+        srcset="/blackout-project/assets/sky-payments-desk-8beee3a4.webp "
+        type="image/webp"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/blackout-project/assets/sky-payments-mob-2f9e09f5.webp "
+        type="image/webp"
+        media="(min-width: 0px)"
+      />
+      <img src="/blackout-project/assets/sky-payments-mob-2f9e09f5.webp" alt="sky" />
+    </picture>
+
     <h2 class="payments-title">реквізити</h2>
     <ul class="payments-list"></ul>
+    <img class="payments-drone" alt="drone" src="/blackout-project/assets/payments-drone-e05d8ada.png" />
   </div>
 </section>
 
