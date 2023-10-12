@@ -5,13 +5,15 @@
     ),
     linear-gradient(rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),
     url(../img/bcg.webp);
+  padding: 0;
+  position: relative;
 }
 
 .about-us .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 30px 15px;
+  padding: 30px 15px 300px;
   gap: 25px;
 }
 
@@ -21,6 +23,7 @@
   align-items: center;
   gap: 30px;
   width: 100%;
+  z-index: 1;
 }
 
 .section-title-content {
@@ -42,6 +45,7 @@
   text-transform: uppercase;
   color: var(--main-black);
   margin-bottom: -10px;
+  z-index: 1;
 }
 
 .about-us-desc {
@@ -76,11 +80,22 @@
 }
 
 .about-us-sky {
-  display: none;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  mix-blend-mode: luminosity;
+  object-fit: fill;
+  width: 1280px;
 }
 
 .about-us-drone {
-  display: none;
+  position: absolute;
+  bottom: 60px;
+  width: 400px;
+  left: 50%;
+  transform: scaleX(-1) scale(1.7) translateX(25%);
 }
 
 @media screen and (min-width: 1280px) {
@@ -98,35 +113,31 @@
     background-color: var(--accent);
     box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.2);
     border-radius: 14px;
-    position: relative;
     overflow: hidden;
+    position: relative;
   }
 
   .about-us-sky {
-    display: block;
     bottom: 0;
     left: 0;
-    position: absolute;
-    mix-blend-mode: luminosity;
+    transform: unset;
   }
 
   .about-us-drone {
-    display: block;
     position: absolute;
     bottom: 60px;
     left: 60px;
     width: 500px;
+    transform: unset;
   }
 
   .section-title {
     font-size: 36px;
-    z-index: 1;
   }
 
   .section-content {
     display: grid;
     grid-template-columns: 1fr 350px;
-    z-index: 1;
     color: #594001;
   }
 

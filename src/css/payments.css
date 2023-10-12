@@ -1,6 +1,31 @@
+.payments-section .container {
+  padding: 40px 10px 220px;
+  background-color: var(--accent);
+  /* background-image: linear-gradient(
+      rgba(255, 184, 3, 0.9),
+      rgba(255, 184, 3, 0.9)
+    ),
+    linear-gradient(rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),
+    url(../img/bcg.webp); */
+  box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.2);
+  border-radius: 14px;
+  position: relative;
+}
+
 .payments-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
+}
+
+.payments-title {
+  text-transform: uppercase;
+  color: var(--main-black);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 24px;
 }
 
 .notyf {
@@ -15,26 +40,92 @@
   font-size: 14px;
 }
 
+.payments-sky-desk {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  mix-blend-mode: luminosity;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 14px;
+}
+
+.payments-sky-desk img {
+  max-width: unset;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 14px;
+}
+
+.payments-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  z-index: 1;
+}
+
+.payments-label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  color: var(--main-black);
+}
+
+.payments-desc {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 14px;
+}
+
+.payments-button {
+  padding: 10px 20px;
+  border-radius: 16px;
+  background-color: var(--main-black);
+  color: var(--main-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 5px;
+  transition: all var(--transition);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.payments-button:is(:hover, :focus, :active) {
+  color: var(--accent);
+}
+
+.icon-copy {
+  fill: var(--main-white);
+  width: 10px;
+  height: 10px;
+}
+
+.payments-button:is(:hover, :focus, :active) .icon-copy {
+  fill: var(--accent);
+}
+
+.payments-drone {
+  position: absolute;
+  bottom: 20px;
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 1280px) {
   .payments-section .container {
     padding: 40px 60px 80px;
-    background-image: linear-gradient(
-        rgba(255, 184, 3, 0.9),
-        rgba(255, 184, 3, 0.9)
-      ),
-      linear-gradient(rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),
-      url(../img/bcg.webp);
-    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.2);
-    border-radius: 14px;
   }
 
   .payments-title {
-    text-transform: uppercase;
-    color: var(--main-black);
     font-size: 36px;
-    font-style: normal;
     font-weight: 900;
-    line-height: 125%;
     margin-bottom: 28px;
   }
 
@@ -47,23 +138,22 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    z-index: 1;
   }
 
   .payments-label {
     font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 125%;
-    color: var(--main-black);
   }
 
   .payments-desc-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    margin-bottom: 0;
   }
 
   .payments-desc {
     align-self: end;
+    margin-bottom: 0;
   }
 
   .payments-button {
@@ -78,18 +168,12 @@
     border: none;
     gap: 8px;
     transition: all var(--transition);
-  }
-
-  .payments-button:is(:hover, :focus, :active) {
-    color: var(--accent);
+    font-size: 14px;
   }
 
   .icon-copy {
-    fill: var(--main-white);
-  }
-
-  .payments-button:is(:hover, :focus, :active) .icon-copy {
-    fill: var(--accent);
+    width: 14px;
+    height: 14px;
   }
 
   .payments-desc {
@@ -102,5 +186,9 @@
 
   .notyf .clipboard-notif-success {
     font-size: 16px;
+  }
+
+  .payments-drone {
+    display: none;
   }
 }
