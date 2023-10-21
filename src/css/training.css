@@ -1,48 +1,40 @@
-.training-section .container {
-  box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.3);
-  border-radius: 14px;
+.training-section {
   background-color: var(--main-black);
   background-image: url(../img/training-sky-mob.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.training-section .container {
   color: var(--main-white);
   display: grid;
   grid-template-columns: 1fr;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 60px 15px 240px;
+  padding: 30px 15px 60px;
   gap: 80px;
   position: relative;
 }
 
-.training-desc-one {
+.training-section .text-accent {
   color: var(--accent);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+}
+
+.training-desc-title {
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
-  line-height: 101%;
-  margin-bottom: 30px;
+  line-height: 125%;
 }
 
-.training-desc-two {
+.training-desc {
   letter-spacing: 0.04em;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  margin-bottom: 15px;
-  display: block;
 }
 
-.training-desc-three {
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 170%;
-}
-
-.training-desc-three span {
-  font-weight: 600;
+.training-section .text-bold {
+  font-weight: 500;
 }
 
 .icon-training-school {
@@ -53,12 +45,10 @@
   height: 172px;
 }
 
-.training-drone-mob {
-  position: absolute;
-  width: 100%;
-  bottom: 20px;
-  left: 0;
-  transform: scale(1.1);
+.training-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -84,10 +74,6 @@
   .training-desc-two {
     margin-bottom: 20px;
     font-size: 14px;
-  }
-
-  .training-drone-mob {
-    display: none;
   }
 
   .training-desc-three {

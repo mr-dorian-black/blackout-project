@@ -1,5 +1,5 @@
 .methods {
-  padding: 28px 0;
+  padding: 78px 0 28px;
 }
 .methods .container {
   padding-top: 0;
@@ -11,12 +11,11 @@
 
 .methods-title {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 900;
   line-height: 125%;
   text-transform: uppercase;
-  max-width: 212px;
 }
 
 .methods-list {
@@ -28,19 +27,24 @@
 }
 
 .method-desc {
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
 }
 
+.method-number-block {
+  margin-bottom: 5px;
+}
+
 .method-number {
   display: block;
   color: var(--main-black);
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 900;
   line-height: 125%;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 1280px) {
