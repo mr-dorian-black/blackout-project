@@ -1,15 +1,17 @@
-.advantages {
-  padding-bottom: 40px;
+.advantages .container {
+  position: relative;
+  padding-top: 25px;
 }
 
 .sec-title {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 125%;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   padding-left: 10px;
+  max-width: 70%;
 }
 
 .advantages-list {
@@ -17,7 +19,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(40px, auto);
   gap: 15px;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 
 .advantages-item {
@@ -34,9 +36,9 @@
 }
 
 .advantages-title {
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -57,15 +59,16 @@
 }
 
 .parameters-item {
-  border-radius: 14px;
+  border-radius: 2px;
   background-color: var(--main-black);
   box-sizing: border-box;
-  padding: 20px 15px;
+  padding: 25px 15px 20px;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 8px;
   transition: all var(--transition);
   overflow: hidden;
+  opacity: 0.8;
+  z-index: 1;
 }
 
 .parameters-param {
@@ -85,8 +88,17 @@
   line-height: normal;
 }
 
+.advantages-mob-drone {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  width: 374px;
+  height: auto;
+  transform: rotate(28deg) scale(1.3);
+}
+
 @media screen and (min-width: 1280px) {
-  .parameters-item:is(:hover, :focus) {
+  /* .parameters-item:is(:hover, :focus) {
     background-color: var(--accent);
     transform: scale(1.1);
     box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.3);
@@ -99,7 +111,7 @@
     .parameters-desc {
       color: var(--main-black);
     }
-  }
+  } */
 
   .sec-title {
     font-size: 36px;
@@ -151,5 +163,9 @@
 
   .parameters-desc {
     font-size: 16px;
+  }
+
+  .advantages-mob-drone {
+    display: none;
   }
 }
