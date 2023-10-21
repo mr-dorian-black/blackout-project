@@ -17,6 +17,7 @@
   );
   box-shadow: 0 0 15px 0px rgba(86, 86, 86, 0.6);
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .header.header-hidden {
