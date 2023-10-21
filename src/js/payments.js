@@ -54,13 +54,14 @@ const detailsRender = (details) => {
           return `<div class="payments-desc-content" >
                          <p class="payments-desc">${info}</p>
                          <button type="button" class="payments-button" data-copy="${copy}">копіювати
-                         <svg class="icon-copy" width="18" height="18">
-                                   <use href="${svg}#icon-copy"></use>
-                              </svg>
                          </button>
                     </div >`
      }).join('');
 }
+
+/* <svg class="icon-copy" width="18" height="18">
+     <use href="${svg}#icon-copy"></use>
+</svg> */
 
 const paymentsRender = payments.map(({ name, details }) => {
      return `<li class="payments-item">

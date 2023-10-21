@@ -2,14 +2,37 @@
   background-color: var(--accent);
 }
 .payments-section .container {
-  padding: 25px 10px 220px;
+  padding: 25px 10px;
   position: relative;
 }
 
 .payments-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 30px;
+}
+
+.payments-desc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.payments-desc-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.payments-title-info {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .payments-title {
@@ -28,7 +51,7 @@
 }
 
 .notyf .clipboard-notif-success {
-  border-radius: 21px;
+  border-radius: 2px;
   max-width: 100%;
   background-color: var(--main-black);
   box-shadow: 0 0px 7px 0 rgba(255, 184, 3, 0.9);
@@ -55,12 +78,12 @@
 .payments-item {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 14px;
+  gap: 20px;
   z-index: 1;
 }
 
 .payments-label {
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 125%;
@@ -71,14 +94,14 @@
   color: #000;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 125%;
   margin-bottom: 14px;
 }
 
 .payments-button {
   padding: 10px 20px;
-  border-radius: 16px;
+  border-radius: 2px;
   background-color: var(--main-black);
   color: var(--main-white);
   display: flex;
