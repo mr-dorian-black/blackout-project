@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 42px 15px 87px;
+  padding: 42px 15px 80px;
   position: relative;
 
   color: var(--main-white);
@@ -73,10 +73,11 @@
 }
 
 .hero-desc-svg {
+  margin-top: -10px;
   fill: transparent;
   stroke: var(--accent);
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
 }
 
 .fill {
