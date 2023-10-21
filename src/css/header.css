@@ -1,12 +1,21 @@
 .header {
-  height: 55px;
   width: 100%;
-  background-color: var(--main-white);
+  background-color: transparent;
   z-index: 10;
   position: fixed;
   top: 0;
-  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.4);
-  transition: all var(--transition);
+  transition: all var(--transition),
+    background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-scroll {
+  background: linear-gradient(
+    90deg,
+    rgba(21, 23, 20, 1) 0%,
+    rgba(21, 24, 18, 1) 50%,
+    rgba(28, 29, 24, 1) 100%
+  );
+  box-shadow: 0 0 15px 0px rgba(86, 86, 86, 0.6);
 }
 
 .header.header-hidden {
@@ -15,7 +24,7 @@
 }
 
 .header .container {
-  padding: 5px 15px;
+  padding: 10px 15px;
 }
 
 .header-text {
@@ -27,7 +36,7 @@
   height: 38px;
   transition: all var(--transition);
   z-index: 10;
-  fill: var(--main-black);
+  fill: var(--main-white);
 }
 
 .header-svg-logo.is-open {

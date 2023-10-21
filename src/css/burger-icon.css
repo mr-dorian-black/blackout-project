@@ -25,7 +25,7 @@
 }
 
 .burger-icon.burger-open svg {
-  stroke: var(--main-black);
+  stroke: var(--main-white);
 }
 
 .burger-icon.burger-close svg {

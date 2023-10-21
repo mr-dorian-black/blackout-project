@@ -124,8 +124,7 @@ html {
 }
 
 body {
-  padding-top: 50px;
-  font-family: 'Rubik', 'Fixel', sans-serif;
+  font-family: 'Fixel', 'Rubik', sans-serif;
   background-color: var(--main-white);
   color: var(--main-black);
   overflow-x: hidden;
@@ -163,9 +162,6 @@ section {
 
   section {
     padding: 20px;
-  }
-  body {
-    padding-top: 50px;
   }
 }
 
