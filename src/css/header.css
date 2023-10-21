@@ -11,11 +11,12 @@
 .header-scroll {
   background: linear-gradient(
     90deg,
-    rgba(21, 23, 20, 1) 0%,
-    rgba(21, 24, 18, 1) 50%,
-    rgba(28, 29, 24, 1) 100%
+    rgba(21, 23, 20, 0.75) 0%,
+    rgba(21, 24, 18, 0.75) 50%,
+    rgba(28, 29, 24, 0.75) 100%
   );
   box-shadow: 0 0 15px 0px rgba(86, 86, 86, 0.6);
+  backdrop-filter: blur(15px);
 }
 
 .header.header-hidden {
