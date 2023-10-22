@@ -74,14 +74,9 @@
 
 .hero-desc-svg {
   margin-top: -10px;
-  fill: transparent;
-  stroke: var(--accent);
+  fill: var(--accent);
   width: 22px;
   height: 22px;
-}
-
-.fill {
-  fill: var(--accent);
 }
 
 .hero-content-descrition {
@@ -115,15 +110,34 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    padding: 70px 20px 0;
+    background-color: transparent;
+    background-image: none;
+  }
+
   .hero {
-    background-image: url('../img/sky.webp');
+    background-image: linear-gradient(
+        177deg,
+        rgba(230, 255, 199, 0.3) 0%,
+        rgba(230, 255, 199, 0.2) 5%,
+        rgba(230, 255, 199, 0.06) 40%,
+        rgba(230, 255, 199, 0.01) 100%
+      ),
+      url('../img/hero-sky-desktop.webp');
     max-width: 1920px;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: var(--main-black);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .hero .container {
-    padding: 20px 60px 56px;
+    padding: 40px 60px 56px;
     border-radius: 14px;
     height: auto;
+    align-items: start;
   }
 
   .hero-content {
@@ -139,6 +153,10 @@
     font-size: 90px;
     padding-left: 0;
     color: var(--accent);
+
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: unset;
   }
 
   .hero-nav {
@@ -155,7 +173,7 @@
   .hero-nav-link {
     text-transform: uppercase;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -182,9 +200,10 @@
   }
 
   .hero-img {
-    top: 80px;
-    left: 400px;
+    top: 100px;
+    left: 390px;
     transform: scale(1);
-    width: 700px;
+    width: 740px;
+    z-index: 1;
   }
 }

@@ -52,8 +52,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .training-section {
+    background-color: unset;
+    background-image: unset;
+  }
+
   .training-section .container {
     border-radius: 14px;
+    background-color: var(--main-black);
     background-image: url(../img/training-sky.webp);
     color: var(--main-white);
     grid-template-columns: repeat(2, 1fr);
@@ -66,17 +72,7 @@
     height: 200px;
   }
 
-  .training-desc-one {
-    margin-bottom: 40px;
-    font-size: 24px;
-  }
-
-  .training-desc-two {
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-
-  .training-desc-three {
-    font-size: 14px;
+  .training-desc {
+    font-size: 16px;
   }
 }

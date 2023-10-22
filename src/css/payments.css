@@ -15,7 +15,7 @@
 .payments-desc-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
   margin-bottom: 50px;
 }
 
@@ -136,19 +136,38 @@
   transform: scale(1.2);
 }
 
+.payments-sky-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
+  .payments-section {
+    background-color: unset;
+  }
+
   .payments-section .container {
-    padding: 40px 60px 80px;
+    background-color: var(--accent);
+    border-radius: 14px;
+    padding: 80px 60px 80px;
+    position: relative;
+  }
+
+  .payments-sky-desktop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    mix-blend-mode: luminosity;
   }
 
   .payments-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 900;
     margin-bottom: 28px;
   }
 
   .payments-list {
-    gap: 60px;
+    gap: 20px;
   }
 
   .payments-item {
@@ -159,25 +178,34 @@
     z-index: 1;
   }
 
+  .payments-desc-list {
+    max-width: 600px;
+  }
+
   .payments-label {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .payments-desc-content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
     margin-bottom: 0;
+  }
+
+  .payments-desc-text {
+    font-size: 16px;
   }
 
   .payments-desc {
     align-self: end;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .payments-title-info {
+    display: none;
   }
 
   .payments-button {
-    align-self: end;
-    padding: 10px 15px;
-    border-radius: 21px;
+    padding: 10px 25px;
+    border-radius: 5px;
     background-color: var(--main-black);
     color: var(--main-white);
     display: flex;
@@ -186,7 +214,9 @@
     border: none;
     gap: 8px;
     transition: all var(--transition);
-    font-size: 14px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
   }
 
   .icon-copy {
@@ -198,7 +228,7 @@
     color: var(--main-black);
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 125%;
   }
 
@@ -208,5 +238,9 @@
 
   .payments-drone {
     display: none;
+  }
+
+  .payments-desc .text-bold {
+    font-weight: 700;
   }
 }

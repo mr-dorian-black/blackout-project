@@ -27,10 +27,7 @@
 
 .header .container {
   padding: 10px 15px;
-}
-
-.header-text {
-  display: none;
+  position: relative;
 }
 
 .header-svg-logo {
@@ -53,27 +50,75 @@
   position: relative;
 }
 
+.header-slogan-list {
+  display: none;
+}
+
+.header-address-content {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
-  .header-text {
-    display: block;
+  .header {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+  }
+
+  .header-scroll {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 15px 0px rgba(86, 86, 86, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
   }
 
   .header-nav {
     justify-content: space-around;
   }
 
-  .header-text {
+  .header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-slogan-list {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 125%;
     text-transform: uppercase;
+  }
+
+  .header-address-content {
+    display: block;
+    font-style: normal;
+  }
+
+  .header-address-text {
+    color: #21251d;
+    opacity: 0.8;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .header-address-number {
+    color: #21251d;
+
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
   }
 
   .header-svg-logo {
     width: 130px;
     height: 43px;
+    fill: var(--main-black);
   }
 
   .header-svg-logo {

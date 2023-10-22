@@ -148,9 +148,13 @@ textarea {
   fill: var(--main-white);
 }
 
+.footer-link-logo-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
   .contacts {
-    padding: 20px 20px 25px;
+    padding: 0;
   }
 
   .contacts .container {
@@ -163,7 +167,7 @@ textarea {
   }
 
   .contact-label {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .contact-info {
@@ -175,7 +179,7 @@ textarea {
   }
 
   .contacts-form-label {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .input-container {
@@ -196,5 +200,17 @@ textarea {
   .form-btn {
     font-size: 16px;
     padding: 10px 30px;
+    border-radius: 5px;
+  }
+
+  .footer-link-logo {
+    display: none;
+  }
+
+  .footer-link-logo-desktop {
+    margin-top: 50px;
+    display: block;
+    width: 130px;
+    height: 43px;
   }
 }
