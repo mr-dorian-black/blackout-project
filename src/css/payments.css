@@ -20,7 +20,7 @@
 }
 
 .payments-desc-text {
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
@@ -92,7 +92,7 @@
 
 .payments-desc {
   color: #000;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
@@ -110,7 +110,7 @@
   border: none;
   gap: 5px;
   transition: all var(--transition);
-  font-size: 11px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
