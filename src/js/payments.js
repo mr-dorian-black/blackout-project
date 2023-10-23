@@ -10,13 +10,6 @@ const payments = [
           ]
      },
      {
-          type: "SEPA", name: "SEPA in euros (EUR)", details: [
-               {
-                    info: `<span class="text-bold">Bank: Clear Junction Limited</span></br>IBAN: G825CLJU00997183555952</br>BIC: CLJUGB21</br>Account Holder Name: NEDILKO ANDRII</br>Taxpayer Identification Number: 3522304691</br>Bank Address: 5 Kingsway, London WC2B 6UN`, copy: "G825CLJU00997183555952"
-               }
-          ]
-     },
-     {
           type: "SWIFT", name: "Валютні SWIFT-перекази", details: [
                {
                     info: `<span class="text-bold">SWIFT in US dollars (USD)</span></br>BENEFICIARY FRONTLINE.CARE</br>IBAN: UA673052990000026002045026136`, copy: "UA673052990000026002045026136"
@@ -36,6 +29,13 @@ const payments = [
                },
                {
                     info: `<span class="text-bold">ETH (ERC20):</span></br>0x2bd19782e5b0dda4469c87316080719cffc73d11`, copy: "0x2bd19782e5b0dda4469c87316080719cffc73d11"
+               }
+          ]
+     },
+     {
+          type: "SEPA", name: "SEPA in euros (EUR)", details: [
+               {
+                    info: `<span class="text-bold">Bank: Clear Junction Limited</span></br>IBAN: G825CLJU00997183555952</br>BIC: CLJUGB21</br>Account Holder Name: NEDILKO ANDRII</br>Taxpayer Identification Number: 3522304691</br>Bank Address: 5 Kingsway, London WC2B 6UN`, copy: "G825CLJU00997183555952"
                }
           ]
      },
