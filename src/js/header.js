@@ -8,8 +8,14 @@ window.addEventListener('scroll', _.throttle(() => {
      let isHeaderScroll = header.classList.contains('header-scroll');
      let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
+     let tempScroll = scrollTop - lastScrollTop;
+
+     console.log(tempScroll)
+     let tempUp = -100;
+     let tempDown = 50;
+
      if (scrollTop < lastScrollTop) { // scroll up
-          if (isHeaderHidden) {
+          if (isHeaderHidden && tempScroll < tempUp) {
                header.classList.remove('header-hidden');
           }
 
@@ -23,7 +29,7 @@ window.addEventListener('scroll', _.throttle(() => {
                header.classList.add('header-scroll');
           }
 
-          if (scrollTop >= 300 && !isHeaderHidden) {
+          if (scrollTop >= 300 && !isHeaderHidden && tempScroll > tempDown) {
                header.classList.add('header-hidden');
           }
      }
