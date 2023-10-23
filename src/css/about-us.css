@@ -82,16 +82,16 @@
   text-transform: uppercase;
 }
 
-.about-us-sky {
+.about-us-sky-desktop {
+  display: none;
+}
+
+.about-us-sky-mobile {
   display: block;
   bottom: 0;
   left: 0;
   position: absolute;
   mix-blend-mode: luminosity;
-  width: 100%;
-}
-
-.about-us-sky img {
   width: 100%;
   object-fit: cover;
 }
@@ -119,6 +119,7 @@
     width: 100%;
     max-width: 1920px;
     display: flex;
+    margin: 0 auto;
   }
 
   .about-us .container {
@@ -127,16 +128,15 @@
     position: relative;
   }
 
-  .about-us-sky {
+  .about-us-sky-desktop {
+    position: absolute;
+    display: block;
     bottom: 0;
     left: 0;
     transform: unset;
     object-fit: cover;
     height: 100%;
-  }
-
-  .about-us-sky img {
-    max-height: 100%;
+    width: 100%;
   }
 
   .about-us-drone {
@@ -170,6 +170,10 @@
     border-left: 5px solid rgba(0, 0, 0, 0.34);
     align-self: self-start;
     padding-left: 10px;
+  }
+
+  .about-us-sky-mobile {
+    display: none;
   }
 
   .about-us-desc {

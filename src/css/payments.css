@@ -150,6 +150,7 @@
     background-color: var(--accent);
     border-radius: 14px;
     max-width: 1920px;
+    margin: 0 auto;
   }
 
   .payments-section .container {
