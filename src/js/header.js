@@ -10,7 +10,7 @@ window.addEventListener('scroll', _.throttle(() => {
 
      let tempScroll = scrollTop - lastScrollTop;
 
-     let tempUp = -100;
+     let tempUp = -50;
      let tempDown = 50;
 
      if (scrollTop < lastScrollTop) { // scroll up
