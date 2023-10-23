@@ -27,7 +27,7 @@
 
 .training-desc {
   letter-spacing: 0.04em;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
@@ -57,10 +57,14 @@
     background-image: unset;
   }
 
-  .training-section .container {
+  .training-background {
     border-radius: 14px;
     background-color: var(--main-black);
     background-image: url(../img/training-sky.webp);
+    max-width: 1920px;
+  }
+
+  .training-section .container {
     color: var(--main-white);
     grid-template-columns: repeat(2, 1fr);
     padding: 100px 80px;

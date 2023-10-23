@@ -20,7 +20,7 @@
 }
 
 .payments-desc-text {
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
@@ -91,8 +91,8 @@
 }
 
 .payments-desc {
-  color: #000;
-  font-size: 16px;
+  color: var(--main-black);
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
@@ -145,14 +145,18 @@
     background-color: unset;
   }
 
-  .payments-section .container {
+  .payments-background {
+    position: relative;
     background-color: var(--accent);
     border-radius: 14px;
+  }
+
+  .payments-section .container {
     padding: 80px 60px 80px;
-    position: relative;
   }
 
   .payments-sky-desktop {
+    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -171,9 +175,9 @@
   }
 
   .payments-item {
-    width: calc((100% - 60px) / 2);
-    display: grid;
-    grid-template-columns: 1fr;
+    width: calc((100% - 60px) / 3);
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     z-index: 1;
   }
