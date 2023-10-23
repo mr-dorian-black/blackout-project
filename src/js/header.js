@@ -10,7 +10,6 @@ window.addEventListener('scroll', _.throttle(() => {
 
      let tempScroll = scrollTop - lastScrollTop;
 
-     console.log(tempScroll)
      let tempUp = -100;
      let tempDown = 50;
 
