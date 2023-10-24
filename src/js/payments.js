@@ -4,13 +4,13 @@ import 'notyf/notyf.min.css';
 
 const payments = [
      {
-          type: 'UAH', name: "UAH Перекази по Україні", details: [
+          col: 1, type: 'UAH', name: "UAH Перекази по Україні", details: [
                { info: `<span class="text-bold">ГО ‘БЛЕКАУТ’</span></br>ЄДРПОУ 44687081</br>Призначення платежу:</br>"Благодійний внесок на статутну діяльність"</br>Назва банку: АТ КБ "ПРИВАТБАНК"</br>UA383052990000026000045028181`, copy: "UA383052990000026000045028181" },
 
           ]
      },
      {
-          type: "SWIFT", name: "Валютні SWIFT-перекази", details: [
+          col: 2, type: "SWIFT", name: "Валютні SWIFT-перекази", details: [
                {
                     info: `<span class="text-bold">SWIFT in US dollars (USD)</span></br>BENEFICIARY FRONTLINE.CARE</br>IBAN: UA673052990000026002045026136`, copy: "UA673052990000026002045026136"
                },
@@ -20,7 +20,7 @@ const payments = [
           ]
      },
      {
-          type: "Crypto", name: "Криптовалюта", details: [
+          col: 3, type: "Crypto", name: "Криптовалюта", details: [
                {
                     info: `<span class="text-bold">Bitcoin:</span></br>159cWtQWWEmSZXbwZeL.pxuyuJMZAtZEWR8`, copy: "159cWtQWWEmSZXbwZeL.pxuyuJMZAtZEWR8"
                },
@@ -33,20 +33,22 @@ const payments = [
           ]
      },
      {
-          type: "SEPA", name: "SEPA in euros (EUR)", details: [
+          col: 1, type: "SEPA", name: "SEPA in euros (EUR)", details: [
                {
                     info: `<span class="text-bold">Bank: Clear Junction Limited</span></br>IBAN: G825CLJU00997183555952</br>BIC: CLJUGB21</br>Account Holder Name: NEDILKO ANDRII</br>Taxpayer Identification Number: 3522304691</br>Bank Address: 5 Kingsway, London WC2B 6UN`, copy: "G825CLJU00997183555952"
                }
           ]
      },
      {
-          type: "Pay Pal", name: "Pay Pal", details: [
+          col: 2, type: "Pay Pal", name: "Pay Pal", details: [
                {
                     info: `frontlinecare.paypal@gmail.com`, copy: "frontlinecare.paypal@gmail.com"
                }
           ]
      }
 ];
+
+let uniqPayCol = [...new Set(payments.map(payment => payment.col))].sort()
 
 
 const detailsRender = (details) => {
@@ -59,19 +61,23 @@ const detailsRender = (details) => {
      }).join('');
 }
 
-/* <svg class="icon-copy" width="18" height="18">
-     <use href="${svg}#icon-copy"></use>
-</svg> */
+const paymentsRender = ({ name, details }) => {
+     return `<p class="payments-label">${name}</p>
+               ${detailsRender(details)}`
+};
 
-const paymentsRender = payments.map(({ name, details }) => {
+const paymentsLiRender = uniqPayCol.map(item => {
      return `<li class="payments-item">
-                    <p class="payments-label">${name}</p>
-                    ${detailsRender(details)}
+          ${payments
+               .filter(({ col }) => col == item)
+               .map(payment => {
+                    return paymentsRender(payment)
+               }).join('')}
                </li>`
-}).join('');
+}).join('')
 
 const paymentsList = document.querySelector('.payments-list');
-paymentsList.innerHTML = paymentsRender;
+paymentsList.innerHTML = paymentsLiRender;
 const notyf = new Notyf({
      position: { x: 'center', y: 'top' },
      types: [
